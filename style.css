@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #F8F8FF;
+}
+.game .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1150px;
+    height: 100vh;
+    margin: 0 auto;
+}
+.game .btn-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+    gap: 20px;
+}
+.game .btn-container .btn {
+    border: 1px solid black;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.game .btn-container .btn:hover {
+    background-color:black;
+    color: white;
+}
+.game .player-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.game .player-container img {
+    max-width: 100%;
+    width: 240px;
+}
+.my-round {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.game .player {
+    padding: 75px;
+    position: relative;
+}
+.game .player h1 {
+    padding-bottom: 15px;
+
+}
+.game .player::before {
+    content: 'you can change me';
+    color: rgb(224, 70, 70);
+    text-transform: capitalize;
+    position: absolute;
+    font-size: 14px;
+    font-weight: 600;
+    width: fit-content;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.game .player .score {
+    padding-bottom: 15px;
+}
+
+.game .match-points {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    gap: 20px;
+}
+.game .match-points input {
+    border: none;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    padding: 10px 5px;
+    border-radius: 10px;
+    caret-color: #ccc;
+}
+.game .match-points input:focus {
+    outline: none;
+}
+.game .match-points input::placeholder {
+    font-size: 14px;
+    color: rgb(161, 156, 156);
+    transition: 0.3s;
+}
+.game .match-points input:focus::placeholder {
+    opacity: 0;
+}
+.game .match-points .btn {
+    background-color: #eee;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.game .result {
+    text-align: center;
+    margin-bottom: 45px;
+    font-size: 28px;
+    font-weight: 700;
+}
+.game #winning_result {
+    color: rgb(196, 87, 72);
+}
+.game .winner {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 50px;
+    font-weight: 700;
+    color: rgb(97, 194, 97);
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css style  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;600&display=swap" rel="stylesheet">
+    <title>Dice Game</title>
+</head>
+
+<body>
+    <div class="game">
+      
+        <div class="container">
+            <div class="result">Winning Result: <span id="winning_result">30</span></div>
+            <div class="match-points">
+                <input type="text" placeholder="Winning points" id="points">
+                <div class="btn" id="btn-points">Click Here</div>
+            </div>
+            <div class="btn-container">
+                <div class="btn" id="roll">ROLL</div>
+                <div class="btn" id="hold">HOLD</div>
+                <div class="btn" id="new">NEW GAME</div>
+            </div>
+            <div class="player-container">
+                <div class="player" id="player_1">
+                    <h1 contentEditable="true" id="player_1_name">Player 1</h1>
+                    <div class="score">Total Score: <span id="player_score_1">0</span></div>
+                    <div class="score">Current Score: <span id="current_score_1">0</span></div>
+                </div>
+                <div class="dice" id="#dice">
+
+                </div>
+                <div class="player" id="player_2">
+                    <h1 contentEditable="true" id="player_2_name">Player 2</h1>
+                    <div class="score">Total Score: <span id="player_score_2">0</span></div>
+                    <div class="score">Current Score: <span id="current_score_2">0</span></div>
+                </div>
+            </div>
+            <div class="winner"><span id="winner"></span></div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
